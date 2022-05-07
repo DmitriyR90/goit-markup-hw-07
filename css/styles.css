@@ -73,7 +73,7 @@ body {
 .header--underline {
   border-bottom: 1px solid var(--hero-underline);
 }
-.header--conteiner {
+.header__conteiner {
   display: flex;
   align-items: center;
 }
@@ -183,7 +183,7 @@ body {
   display: flex;
   align-items: center;
 }
-.contacts--header {
+.header__contacts {
   margin-left: auto;
 }
 .contacts__list + .contacts__list {
@@ -249,7 +249,7 @@ body {
   color: var(--main-bg-color);
 }
 
-.hero-btn {
+.hero__button {
   display: inline;
 }
 
@@ -292,19 +292,19 @@ body {
 
 /* !---------------Чем мы занимаемся section!--------------- */
 
+.section__our-works {
+  padding-top: 0%;
+}
+
 .section-title {
   text-align: center;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-.section-title--after-title-margin {
   margin-bottom: 50px;
 }
-.section--works {
-  padding-top: 0%;
-}
+
 .examples {
   display: flex;
   justify-content: space-between;
@@ -338,7 +338,7 @@ body {
 
 /* !---------------Наша команда section!--------------- */
 
-.section--team {
+.section--team-color {
   background-color: var(--team-bg-color);
 }
 
@@ -410,15 +410,6 @@ body {
 
 /* !---------------Наши клиенты section!--------------- */
 
-/* .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  margin-bottom: 50px;
-} */
 .clients-list {
   display: flex;
   justify-content: center;
@@ -460,10 +451,16 @@ body {
   padding: 60px 0;
   background-color: var(--footer-bg-color);
 }
+
+.footer__conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo__text--footer-color {
   color: var(--main-bg-color);
 }
-.logo--foter-margin {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -472,36 +469,31 @@ body {
   font-style: normal;
 }
 
+.company-contacts__link--adress-color {
+  color: var(--main-bg-color);
+}
+
 .company-contacts__link {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timming);
 }
-
-.site-address .link:hover,
-.site-address .link:focus {
-  color: var(--text-focus-color);
-}
 .company-contacts__link--adress-color {
   color: var(--main-bg-color);
 }
-/* .logo-footer {
-  display: inline-block;
-  margin-right: 0;
-} */
-.site-address .list {
-  display: block;
+.company-contacts__link:hover,
+.company-contacts__link:focus {
+  color: var(--text-focus-color);
 }
+
 .company-contacts__list:not(:last-child) {
   margin-bottom: 9px;
 }
-.conteiner--position {
-  display: flex;
-  align-items: baseline;
-}
-.connect--position {
+
+.connect__wrap {
   margin-left: 70px;
 }
 .connect__title {
@@ -521,7 +513,7 @@ body {
 .social-list__link--footer-link:focus {
   background-color: var(--text-focus-color);
 }
-.subscribe--position {
+.subscribe__form {
   margin-left: auto;
 }
 .subscribe__input {
@@ -553,7 +545,7 @@ body {
   color: var(--main-bg-color);
 }
 
-.button--subscribe {
+.subscribe__button {
   display: flex;
   align-items: center;
   justify-content: center;
